@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Titulo:
+  = @task.titulo
+%p
+  %b Descripcion:
+  = @task.descripcion
+%p
+  %b Inicio:
+  = @task.inicio
+%p
+  %b Dificultad:
+  = @task.dificultad
+%p
+  %b User:
+  = @task.user_id
+%p
+  %b Fin:
+  = @task.fin
+%p
+  %b Project:
+  = @task.project_id
+%p
+  %b Tasktype:
+  = @task.tasktype_id
+%p
+  %b Status:
+  = @task.status
+
+= link_to 'Edit', edit_task_path(@task)
+\|
+= link_to 'Back', tasks_path
